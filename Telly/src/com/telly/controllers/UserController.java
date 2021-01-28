@@ -41,7 +41,7 @@ public class UserController {
 	@RequestMapping("/createaccount")
 	public String createAccount(Model model, Principal principal) {
 		
-		model.addAttribute("user", new User());
+		model.addAttribute("azer", new User());
 		
 		return "createaccount";
 	}
@@ -57,7 +57,7 @@ public class UserController {
 		user.setEnabled(true);
 
 		userService.create(user);
-		System.out.println(user);
+		
 		
 		return "home";
 
