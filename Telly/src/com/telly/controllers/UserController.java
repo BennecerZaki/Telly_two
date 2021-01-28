@@ -57,6 +57,7 @@ public class UserController {
 		user.setEnabled(true);
 
 		userService.create(user);
+		System.out.println(user);
 		
 		return "home";
 
